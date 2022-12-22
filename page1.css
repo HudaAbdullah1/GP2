@@ -133,7 +133,7 @@ button{
 .overlay{
     position: relative;
     background: #483D5D;
-    background: -webkit-linear-gradient(20deg, #4E6994, #7FB4BF,#8475A3  );
+    background: -webkit-linear-gradient(20deg, #4E6994, #7FB4BF,#8475A3);
     color: #fff;
     left: -150%;
     height: 100%;

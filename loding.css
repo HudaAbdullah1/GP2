@@ -29,8 +29,8 @@ body{
 }
 /* يكون مستطيل التحميل شفاف */
 .loader__item--glowing{
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(178, 177, 177);
     z-index: 2;
 }
 /* تنسيق الوان وحركة التحميل */

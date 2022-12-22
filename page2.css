@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #4E6994, #7FB4BF,#8475A3);
+}
+.conteiner{
+    padding: 40px 0px;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* البوكس الابيض  */
+.card{
+    position: relative;
+    padding: 50px 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    overflow: hidden;
+    cursor: pointer;
+    /* filter: blur(3px); */
+    transition: filter 0.2s;
+    transform: 0.3s;
+}
+.card__title-body{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__circle{
+    position: absolute;
+    top: -53%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color:#483D5D;
+}
+.card:nth-child(2) .card__circle{
+    background-color: #7F4977;
+}
+.card__title{
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: white;
+}
+.card__desc{
+    text-align: center;
+}
+/* اذا حطينا السهم على المربع يوضح */
+.card:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+}

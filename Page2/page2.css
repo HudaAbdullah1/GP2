@@ -6,6 +6,7 @@
 }
 body{
     background: linear-gradient(45deg, #4E6994, #7FB4BF,#8475A3);
+    font-family: 'Poppins', sans-serif;
 }
 .conteiner{
     padding: 40px 0px;

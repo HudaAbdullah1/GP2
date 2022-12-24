@@ -1,0 +1,286 @@
+/* -------------- font google --------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ----------- global ---------------- */
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #747e74;
+    overflow-x: hidden;
+    background-color: #e9f3fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700; 
+
+}
+h1{
+    font-family: 'Roboto';
+    font-weight: 700; 
+    color: #101010;
+}
+p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #747e74;
+    margin: 0;
+}
+span{
+    display: contents;
+    color: #362360;
+}
+/* ------------ all button css ---------- */
+
+.btn1 {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+    border: 2px solid #362360;
+    border-radius: 5px;
+    background-color: #362360;
+    color: #fff;
+}
+/* اذا ضغطنا على الزر */
+.btn1:hover{
+    /* background-color: rgba(#c35e9e ,.7); */
+    color: #fff;
+    border-color: transparent;
+}
+/* ------------ all animation ---------- */
+/* الصورة */
+@keyframes bounceTop-1 {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+/* الدوائر الصغار */
+@keyframes animation-1 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* ----------- navbar css----------- */
+.navbar-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    /* background-color: #D8DAD8; */
+}
+
+.navbar {
+    position: relative;
+    padding: 10px 0;
+}
+/* اتجاهات عناصر الناف بار */
+.navbar-nav .nav-item {
+    position: relative;
+    margin-left: 40px;
+}
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #38424d;
+}
+/* يطلع لون على عناصر البار */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #c35e9e;
+}
+/* النقطة اللي تطلع مع السهم */
+.navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 0;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #38424d;
+    opacity: 0;
+    transition: all .3 ease-out 0s;
+}
+/* عشان اذا حطينا السهم يطلع لنا نقطة  */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover::before {
+    opacity: 1;
+}
+/* ----------- home css ---------- */
+
+.header-hero {
+    position: relative;
+    top: 0;
+    height: 700px;
+    background-position: bottom center;
+}
+.header-hero-content {
+    position: relative;
+}
+.header-hero-content .header-title {
+    font-size: 42px;
+    color: #38424d;
+    height: 80px;
+}
+.header-hero-content .text {
+    margin-top: 0px;
+    font-size: 20px;
+    height: 100px;
+}
+.header-hero-content ul{
+    margin-top: 30px;
+}
+.header-image {
+    position: relative;
+    padding-top: 10px;
+    animation: bounceTop-1 3s ease infinite;
+    right: 180px;
+}
+/* الصورة الثانية اللي في الزاوية */
+/* .header-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(header1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} */
+.header-hero .shape {
+    position: absolute;
+}
+/* تنسيقات الدوائر الصغار */
+.header-hero .shape.shape-1 {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 90px;
+    top: 20%;
+    border-radius: 50%;
+    background: #c3aed9 ;
+    animation: animation-1 2s linear infinite;
+}
+
+.header-hero .shape.shape-2 {
+    width: 39px;
+    height: 39px;
+    left: 150px;
+    bottom: 40px;
+    border-radius: 50%;
+    background: #84a6d3;
+    animation: animation-1 2s linear infinite;
+}
+
+.header-hero .shape.shape-3 {
+    width: 19px;
+    height: 19px;
+    left: 26px;
+    bottom: 25%;
+    border-radius: 50%;
+    background: #c35e9e ;
+    animation: animation-1 2s linear infinite;
+}
+
+.header-hero .shape.shape-4 {
+    width: 39px;
+    height: 39px;
+    left: 40%;
+    top: 175px;
+    border-radius: 50%;
+    background: #84a6d3;
+    animation: animation-1 2s linear infinite;
+}
+
+.header-hero .shape.shape-5 {
+    width: 19px;
+    height: 19px;
+    left: 50%;
+    bottom: 20%;
+    border-radius: 50%;
+    background: #c3aed9;
+    animation: animation-1 2s linear infinite;
+}
+
+.header-hero .shape.shape-6 {
+    width: 14px;
+    height: 14px;
+    left: 45%;
+    bottom: 70%;
+    border-radius: 50%;
+    background: #362360 ;
+    animation: animation-1 2s linear infinite;
+}
+/* صورة الدائرة */
+/* .header-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+} */
+/* FOOTER */
+footer{
+    background-color: #362360;
+    height: 130px;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 0rem;
+}

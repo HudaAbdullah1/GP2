@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(45deg, #4E6994, #7FB4BF,#8475A3);
+    background-color: #ddedfa;
     font-family: 'Poppins', sans-serif;
 }
 .conteiner{
@@ -50,10 +50,13 @@ body{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-color:#483D5D;
+    background-color:#4a415c;
 }
 .card:nth-child(2) .card__circle{
-    background-color: #7F4977;
+    background-color: #7e5178;
+}
+.card:nth-child(3) .card__circle{
+    background-color: #A5CAD2;
 }
 .card__title{
     position: relative;
